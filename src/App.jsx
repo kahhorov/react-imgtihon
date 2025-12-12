@@ -14,7 +14,7 @@ function App() {
 
   return (
     <div
-      className={`${
+      className={` ${
         theme === "light" ? "bg-white text-black" : "bg-transparent"
       }`}
     >

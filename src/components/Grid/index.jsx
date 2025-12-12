@@ -1,7 +1,7 @@
 function Main({ data, theme }) {
   return (
     <ul
-      className={`grid sm:grid-cols-1 md:grid-cols-3 lg:grid-cols-4 gap-5 container`}
+      className={`grid sm:grid-cols-1 md:grid-cols-3 lg:grid-cols-4 gap-5 container pb-10`}
     >
       {data?.map(({ title, body, id }) => {
         return (
