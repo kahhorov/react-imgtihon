@@ -3,6 +3,6 @@
 
 @layer utilities {
   .container {
-    @apply w-full max-w-[1332px] mx-auto px-4;
+    @apply w-full max-w-[1232px] mx-auto px-4;
   }
 }

@@ -6,11 +6,18 @@ import Navbar from "./components/Navbar";
 function App() {
   const [data, setData] = useState(null);
   const [theme, setTheme] = useState("light");
-  const { get, loading, error } = useAxios();
+  const { get, loading } = useAxios();
 
   useEffect(() => {
     get().then((res) => setData(res.data));
   }, []);
+  if (loading) {
+    return (
+      <div className="w-full h-screen items-center justify-center">
+        Yuklanmoqda...
+      </div>
+    );
+  }
 
   return (
     <div

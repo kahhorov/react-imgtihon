@@ -6,7 +6,7 @@ function Main({ data, theme }) {
       {data?.map(({ title, body, id }) => {
         return (
           <div
-            className={`card card-dash bg-base-100 shadow-gray-600 shadow-2xl hover:scale-105 transition-all duration-300 hover:bg-gray-700 hover:text-white cursor-pointer ${
+            className={`card card-dash shadow-gray-600 shadow-2xl hover:scale-105 transition-all duration-300 hover:bg-gray-700 hover:text-white cursor-pointer ${
               theme === "light"
                 ? "bg-white text-black border-0"
                 : "bg-transparent"
